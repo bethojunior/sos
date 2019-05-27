@@ -13,14 +13,7 @@ class ContentController extends BaseController
         echo $return;
     }
 
-    public function actionContentFileWithVideo(){
-        $content   = $this->byPost['link'];
-        $titulo    = $this->byPost['title'];
-        $description = $this->byPost['description'];
-        $date = date('d-m-y-H-i-s');
-        $return = $this->contentDao->insertContent($content, $titulo, $description , $date , true);
-        echo $return;
-    }
+
 
     public function actionDeleteContent(){
         $id = $this->byPost['id'];
@@ -28,7 +21,7 @@ class ContentController extends BaseController
     }
 
     public function actionGetAll(){
-        echo $this->baseDao->dbGetAll('files');
+        echo $this->baseDao->dbGetAll('products');
     }
 
 }

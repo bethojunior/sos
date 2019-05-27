@@ -38,24 +38,24 @@ $classController = $class . 'Controller';
 
 
 //verifica sessão e se é requisição
-if($classController !== 'homeController'){
-    if(!validateRequest()){
-        $verifySession = Route::checkSession(null);
-        if(!$verifySession){
-            echo "Você nao tem permissão";
-            return;
-        }
-    }
-
-}
-//verifica se requisição é válida
-function validateRequest(){
-    $newValidate = new ValidateRequest();
-    if($newValidate->checkPermissionValidate()){
-        return true;
-    }
-    return false;
-}
+//if($classController !== 'homeController'){
+//    if(!validateRequest()){
+//        $verifySession = Route::checkSession(null);
+//        if(!$verifySession){
+//            echo "Você nao tem permissão";
+//            return;
+//        }
+//    }
+//
+//}
+////verifica se requisição é válida
+//function validateRequest(){
+//    $newValidate = new ValidateRequest();
+//    if($newValidate->checkPermissionValidate()){
+//        return true;
+//    }
+//    return false;
+//}
 
 if (!class_exists($classController)) {
     Controller::renderView("404");

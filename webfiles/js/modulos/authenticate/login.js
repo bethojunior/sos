@@ -38,9 +38,7 @@ elementPorperty.addEventInElement('#logar','onclick',function(){
             Session.set('user' , resolve.data[0]);
 
             Materialize.toast('Bem vindo '+resolve.data[0]['name']+', você será redirecionando para a tela principal' , 2000);
-            setTimeout(()=>{
-                window.location.href = HOST+'dashboard';
-            },2500);
+            window.location.href = HOST+'dashboard/init';
         });
     }
 });

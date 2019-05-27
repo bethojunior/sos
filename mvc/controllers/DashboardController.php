@@ -1,6 +1,5 @@
 <?php
 
-
 class DashboardController extends View
 {
 
@@ -11,38 +10,39 @@ class DashboardController extends View
         $this->byPost = $_POST['data'];
     }
 
-    function actionIndex(){
-        $js  = ['modulos/nav/init','modulos/dashboard/init','controllers/UserController'];
-        $css = ['home/init','preload','dashboard/init','nav/main'];
+
+    function actionInit(){
+        $js  = ['controllers/UserController','modulos/nav/init','modulos/dashboard/init'];
+        $css = ['home/init','preload','dashboard/student','nav/main'];
         $views = ['preload/index','nav/main','dashboard/init'];
 
         $seo = new stdClass();
         $seo->description   = '';
-        $seo->title         = 'Web cursinho';
+        $seo->title         = 'SOS - Inicio';
 
         $this->layoutBuilder($views, $js, $css, $seo);
     }
 
-    function actionstudent(){
-        $js  = ['controllers/UserController','modulos/nav/init','modulos/dashboard/student'];
-        $css = ['home/init','preload','dashboard/student','nav/main'];
-        $views = ['preload/index','nav/main','dashboard/student'];
-
-        $seo = new stdClass();
-        $seo->description   = '';
-        $seo->title         = 'Web cursinho';
-
-        $this->layoutBuilder($views, $js, $css, $seo);
-    }
-
-    function actionContent(){
+    function actionSale(){
         $js  = ['controllers/UserController','controllers/ContentController','modulos/nav/init','modulos/dashboard/content'];
         $css = ['home/init','preload','dashboard/content','nav/main'];
         $views = ['preload/index','nav/main','dashboard/content'];
 
         $seo = new stdClass();
         $seo->description   = '';
-        $seo->title         = 'Web cursinho';
+        $seo->title         = 'SOS - Vender';
+
+        $this->layoutBuilder($views, $js, $css, $seo);
+    }
+
+    function actionProducts(){
+        $js  = ['controllers/UserController','controllers/ContentController','modulos/nav/init','modulos/dashboard/content'];
+        $css = ['home/init','preload','dashboard/content','nav/main'];
+        $views = ['preload/index','nav/main','dashboard/content'];
+
+        $seo = new stdClass();
+        $seo->description   = '';
+        $seo->title         = 'SOS - Produtos';
 
         $this->layoutBuilder($views, $js, $css, $seo);
     }
@@ -54,7 +54,7 @@ class DashboardController extends View
 
         $seo = new stdClass();
         $seo->description   = '';
-        $seo->title         = 'Web cursinho';
+        $seo->title         = 'SOS';
 
         $this->layoutBuilder($views, $js, $css, $seo);
     }
@@ -66,9 +66,11 @@ class DashboardController extends View
 
         $seo = new stdClass();
         $seo->description   = '';
-        $seo->title         = 'Web cursinho';
+        $seo->title         = 'SOS';
 
         $this->layoutBuilder($views, $js, $css, $seo);
     }
+
+
 
 }
