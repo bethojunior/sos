@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.row.generalSearch{
+    margin: 0;
+    padding: 0;
+}
+.row.generalSearch #mountListUsers{
+    margin: 0;
+    margin-top: 3vw;
+    padding: 0;
+}
+.row.generalSearch #mountListUsers .cliente{
+    background-color: white;
+    border-radius: 1vw;
+    margin: 2vw;
+    padding: 1vw;
+    width: 90%;
+    margin-left: 5%;
+    font-family: Montserrat;
+}
+.row.generalSearch #searchUsers{
+    background-color: white;
+    text-align: center;
+}

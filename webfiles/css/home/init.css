@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+    font-family: "Montserrat";
+}
+.generalHome {
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+}
+.generalHome .form{
+    margin-top: 15vw;
+    padding: 1vw;
+    background-color: whitesmoke;
+    width: 50vw;
+}
+.generalHome .form #info{
+    cursor: pointer;
+    position: absolute;
+    margin-left: -1.6vw;
+    margin-top: -2vw;
+    padding: 1vw;
+}
+
+.generalHome .form #showPassword{
+    cursor: pointer;
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: -5vw;
+    padding: 1vw;
+}

@@ -1,0 +1,33 @@
+.ml .titlePage{
+    background-color: whitesmoke;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+}
+.ml .divider.first{
+    margin-top: 1vw;
+}
+.ml .generalStudent{
+    margin-top: 1vw;
+}
+.free{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    padding: 1vw;
+    border-radius: 0.5vw;
+}
+.blocked{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 1vw;
+    border-radius: 0.5vw;
+}
+.pending{
+    cursor: pointer;
+    background-color: #F1AE3A;
+    color: white;
+    padding: 1vw;
+    border-radius: 0.5vw;
+}

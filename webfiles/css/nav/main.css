@@ -1,0 +1,41 @@
+.row .col.l2.mainNav{
+    background-color: whitesmoke;
+    height: 100%;
+    position: fixed;
+}
+.row .col.l2.mainNav .profile ul {
+
+}
+.row .col.l2.mainNav ul li{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    font-weight: 650;
+}
+.row .col.l2.mainNav ul li i{
+
+}
+.row .col.l2.mainNav ul li a{
+    color: black;
+}
+.row .col.l2.mainNav  ul li:hover{
+    color: #0D47A1;
+    cursor: pointer;
+}
+.row .col.l2.mainNav .profile{
+    padding: 0.5vw;
+}
+.row .col.l2.mainNav .profile .divider{
+    margin-top: 1vw;
+}
+.row .col.l2.mainNav .profile #editProfile{
+    font-size: 1vw;
+    cursor: pointer;
+    border: solid 1px;
+    padding: 0.1vw;
+    border-radius: 1vw;
+    margin-left: 0.8vw;
+}
+.row .col.l2.mainNav .profile #editProfile:hover{
+    cursor: pointer;
+    color: #0D47A1;
+}

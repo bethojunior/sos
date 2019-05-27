@@ -1,0 +1,5 @@
+PAGO Novembro  => R$200 + R$100(de outubro) = Foi Pago R$200; (Acordado que os R$200 que seria meu do sistema, eu pagaria a ultima parcela do pc);
+Dezembro  => R$400 + R$100 de Novembro = R$200 do pc(que eu paguei do meu, no mês de novembro) e R$200 do sistema + R$100 de Novembro;
+Janeiro   => R$200;
+Fevereiro => R$200;
+Março     => R$200;
