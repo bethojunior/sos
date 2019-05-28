@@ -30,7 +30,7 @@ class ContentDao extends BaseDao
     public function deleteContent($id){
 
         try{
-            $query = "delete from files where id = :id";
+            $query = "delete from products where id = :id";
             $query = $this->conn->prepare($query);
             $query -> bindValue(':id' , $id , PDO::PARAM_INT);
             $query->execute();

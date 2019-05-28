@@ -14,7 +14,7 @@ class ContentController extends BaseController
 
 
 
-    public function actionDeleteContent(){
+    public function actionDelete(){
         $id = $this->byPost['id'];
         echo $this->contentDao->deleteContent($id);
     }

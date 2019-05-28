@@ -14,4 +14,11 @@ class ContentController {
         })
     }
 
+    static delete(data)
+    {
+        return new Promise(resolve => {
+            ConnectionServer.simpleRequest('content/delete','POST',{data}, resolve)
+        })
+    }
+
 }

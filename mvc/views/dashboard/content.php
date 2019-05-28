@@ -14,6 +14,7 @@
                     <th>Descricao</th>
                     <th>Valor</th>
                     <th>Referencia</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody id="mountTableContent">
