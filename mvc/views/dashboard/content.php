@@ -1,4 +1,5 @@
 <div class="ml">
+
     <span class="titlePage">Produtos</span>
     <div class="divider first"></div>
     <ul class="tabs">
@@ -27,11 +28,10 @@
         <label>Referencia</label>
         <input id="ref" disabled value="SOS223#">
         <input id="name" placeholder="Nome">
-        <input id="value" placeholder="Valor">
+        <input id="value" placeholder="Valor (Exemplo 23,50)">
         <input id="description" placeholder="Descrição">
         <button id="sendContent" class="btn">Enviar</button>
     </div>
 
 
-    </div>
 </div>

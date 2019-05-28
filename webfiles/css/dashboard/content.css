@@ -7,23 +7,6 @@
 .ml .divider.first{
     margin-top: 1vw;
 }
-.ml .generalContent{
-    display: flex;
-    margin-top: 1vw;
-}
-.ml .generalContent .header{
-    margin: 1%;
-    width: 30%;
-}
-
-.ml .generalContent .firstPart{
-    margin: 1%;
-    width: 50%;
-}
-.ml .generalContent .secondPart{
-    margin: 1%;
-    width: 20%;
-}
-.ml .generalContent .thirdPart{
-    width: 100%;
+.ml #firstPart table.striped.highlight.bordered tbody#mountTableContent{
+    height: 10vw;
 }

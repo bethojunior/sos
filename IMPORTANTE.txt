@@ -1,1 +1,2 @@
 criar log para mostrar entrada(cadastro de produtos) e saida (venda de produtos)
+verificar referencia e criar um novo para cada produto

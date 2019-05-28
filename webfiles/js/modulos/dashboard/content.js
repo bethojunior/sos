@@ -1,5 +1,5 @@
-
 mountContent();
+
 function mountContent(){
     elementProperty.getElement('#mountTableContent',element => {
         ContentController.getProducts().then(response => {
@@ -50,10 +50,15 @@ elementProperty.addEventInElement('#sendContent','onclick',function(){
         Materialize.toast('Voce precisa preencher todos os campos' , 6000);
         return;
     }
+
     preload(true);
+
     ContentController.insertProduct(data).then(response => {
         preload(false);
         if(response.status){
+            document.getElementById('name').value = '';
+            document.getElementById('value').value = '';
+            document.getElementById('description').value = '';
             swal('Finalizado','Produto inserido','success');
             mountContent();
         }

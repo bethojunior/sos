@@ -19,6 +19,7 @@
 <script src="<?php echo Host::getLocal();?>webfiles/js/service/formatValue.js" ></script>
 <script src="<?php echo Host::getLocal();?>webfiles/js/service/ScreenShot.js" ></script>
 <script src="<?php echo Host::getLocal();?>webfiles/js/utils/Session.js" ></script>
+<script src="<?php echo Host::getLocal();?>webfiles/js/utils/Mask.js" ></script>
 <script src="<?php echo Host::getLocal();?>webfiles/js/utils/DateCustom.js" ></script>
 <script src="<?php echo Host::getLocal();?>webfiles/js/utils/SwalCustom.js"></script>
 <script src="<?php echo Host::getLocal();?>webfiles/js/utils/ValidateForm.js" ></script>
