@@ -23,7 +23,7 @@ class ValidateRequest
     public function checkPermission(){
 
         $thisRoute = Permission::checkIsPublicRoute();
-        $verify = self::checkUser($this->id , $this->token);
+        $verify = self::checkUser($this->id);
 
         if($thisRoute){
             if($verify){
@@ -51,16 +51,14 @@ class ValidateRequest
     }
 
 
-    public static function checkUser($id , $token){
+    public static function checkUser($id){
 
         $userDao = new UserDao();
         $return = $userDao->checkUser($id);
 
         $idUser    = $return[0]['id'];
-        $tokenUser = $return[0]['token'];
 
         if($id === $idUser)
-            if($token === $tokenUser)
                 return true;
 
         return false;

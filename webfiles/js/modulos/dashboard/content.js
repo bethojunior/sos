@@ -1,4 +1,6 @@
 
-ConnectionServer.simpleRequest('dashboard/getAll','POST', {}, res => {
-    console.log(res)
-})
+elementProperty.getElement('#firstPart',element => {
+    ContentController.getProducts().then(res => {
+        console.log(res)
+    })
+});

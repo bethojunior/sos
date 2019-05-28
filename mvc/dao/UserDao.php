@@ -137,7 +137,7 @@ class UserDao extends BaseDao{
 
     public function checkUser($id){
         try{
-            $query = "SELECT id , token FROM users where id = :id";
+            $query = "SELECT id FROM users where id = :id";
             $query = $this->conn->prepare($query);
             $query->bindValue(':id' , $id , PDO::PARAM_INT);
             $query->execute();
