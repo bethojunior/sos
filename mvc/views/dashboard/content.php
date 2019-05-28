@@ -7,16 +7,28 @@
     </ul>
 
     <div id="firstPart" class="col s12">
+        <table class="striped highlight bordered">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descricao</th>
+                    <th>Valor</th>
+                    <th>Referencia</th>
+                </tr>
+            </thead>
+            <tbody id="mountTableContent">
 
+            </tbody>
+        </table>
     </div>
 
     <div id="listProducts" class="secondSend" style="width: 80%;">
         <label>Referencia</label>
-        <input disabled value="SOS223#">
+        <input id="ref" disabled value="SOS223#">
         <input id="name" placeholder="Nome">
         <input id="value" placeholder="Valor">
         <input id="description" placeholder="Descrição">
-        <button id="sendContentVideo" class="btn">Enviar</button>
+        <button id="sendContent" class="btn">Enviar</button>
     </div>
 
 

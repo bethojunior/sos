@@ -3,15 +3,14 @@
 
 class ContentDao extends BaseDao
 {
-    public function insertContent($name , $title , $description , $data , $isvideo){
+    public function insertContent($name , $value , $description , $ref){
 
         try{
-            $query = "INSERT INTO files (name , title , description , datenow ,isvideo) VALUES (:name , :title , :description, :data , :isvideo)";
+            $query = "INSERT INTO products (name , value , description , ref) VALUES (:name , :value , :description , :ref)";
             $query = $this->conn->prepare($query);
-            $query -> bindValue(':name' , $name , PDO::PARAM_STR);
-            $query -> bindValue(':title' , $title , PDO::PARAM_STR);
-            $query -> bindValue(':data' , $data , PDO::PARAM_STR);
-            $query -> bindValue(':isvideo' , $isvideo , PDO::PARAM_STR);
+            $query -> bindValue(':name'        , $name  , PDO::PARAM_STR);
+            $query -> bindValue(':value'       , $value , PDO::PARAM_STR);
+            $query -> bindValue(':ref'         , $ref , PDO::PARAM_STR);
             $query -> bindValue(':description' , $description , PDO::PARAM_STR);
             $query->execute();
 

@@ -5,5 +5,5 @@ if(IS_HOST_ENVIRONMENT_TEST){
     typeVersion = "Teste";
 }
 
-const HOST = 'sos/';
+const HOST = '/sos/';
 const HOSTCOOKIE = 'WB';
