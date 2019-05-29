@@ -1,0 +1,7 @@
+class SalesController
+{
+    static insert()
+    {
+        //
+    }
+}

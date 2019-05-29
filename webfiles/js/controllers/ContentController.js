@@ -7,6 +7,13 @@ class ContentController {
         })
     }
 
+    static getProductById(data)
+    {
+        return new Promise(resolve => {
+            ConnectionServer.simpleRequest('content/get','POST',{data}, resolve)
+        })
+    }
+
     static insertProduct(data)
     {
         return new Promise(resolve => {

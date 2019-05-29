@@ -1,0 +1,23 @@
+.ml .titlePage{
+    background-color: whitesmoke;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+}
+.ml .divider.first{
+    margin-top: 1vw;
+}
+.ml .generalSales{
+    display: flex;
+}
+.ml .generalSales .first{
+    width: 35%;
+}
+.ml .generalSales .first #mountListProducts{
+    /*border: solid 1px;*/
+}
+.ml .generalSales .second{
+    padding-top: 1vw;
+    width: 65%;
+    padding-left: 1vw;
+}

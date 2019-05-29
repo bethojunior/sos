@@ -24,13 +24,13 @@ class DashboardController extends View
     }
 
     function actionSale(){
-        $js  = ['controllers/UserController','controllers/ContentController','modulos/nav/init','modulos/dashboard/content'];
-        $css = ['home/init','preload','dashboard/content','nav/main'];
-        $views = ['preload/index','nav/main','dashboard/content'];
+        $js  = ['controllers/UserController','controllers/ContentController','controllers/SalesController','modulos/nav/init','modulos/dashboard/sales'];
+        $css = ['home/init','preload','dashboard/sales','nav/main'];
+        $views = ['preload/index','nav/main','dashboard/sales'];
 
         $seo = new stdClass();
         $seo->description   = '';
-        $seo->title         = 'SOS - Vender';
+        $seo->title         = 'SOS - Vendas';
 
         $this->layoutBuilder($views, $js, $css, $seo);
     }
@@ -58,19 +58,6 @@ class DashboardController extends View
 
         $this->layoutBuilder($views, $js, $css, $seo);
     }
-
-    function actionTips(){
-        $js  = ['controllers/UserController','modulos/nav/init','modulos/dashboard/tips'];
-        $css = ['home/init','preload','dashboard/tips','nav/main'];
-        $views = ['preload/index','nav/main','dashboard/tips'];
-
-        $seo = new stdClass();
-        $seo->description   = '';
-        $seo->title         = 'SOS';
-
-        $this->layoutBuilder($views, $js, $css, $seo);
-    }
-
 
 
 }

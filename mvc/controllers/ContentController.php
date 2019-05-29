@@ -3,7 +3,8 @@
 
 class ContentController extends BaseController
 {
-    public function actionInsert(){
+    public function actionInsert()
+    {
         $name        = $this->byPost['name'];
         $value       = $this->byPost['value'];
         $description = $this->byPost['description'];
@@ -12,14 +13,20 @@ class ContentController extends BaseController
         echo $return;
     }
 
+    public function actionGet()
+    {
+        $return = $this->contentDao->getbyId($this->byPost['id']);
+        echo $return;
+    }
 
-
-    public function actionDelete(){
+    public function actionDelete()
+    {
         $id = $this->byPost['id'];
         echo $this->contentDao->deleteContent($id);
     }
 
-    public function actionGetAll(){
+    public function actionGetAll()
+    {
         echo $this->baseDao->dbGetAll('products');
     }
 
