@@ -32,14 +32,16 @@ function mountProducts(){
 function reloadListProductsClient() {
     elementProperty.getElement('#listProductsClient',element => {
         listProducts.map(_that => {
+            console.log(_that)
             let check = listProducts.indexOf(_that);
+            console.log(check)
             if (check > -1) {
                 listProducts.splice(check, 1);
-                console.log(listProducts)
             }
             let data = {};
             data.id = _that;
-            ContentController.getProductById(_that).then(response => {
+            ContentController.getProductById(data).then(response => {
+                console.log(data)
                 let list = '';
                 list += response.data.map(res => {
                     return `
