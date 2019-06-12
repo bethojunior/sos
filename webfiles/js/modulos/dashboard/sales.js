@@ -30,17 +30,31 @@ function mountProducts(){
 }
 
 function reloadListProductsClient() {
-
-    listProducts.map(_that => {
-        let data = {};
-        data.id = _that;
-        ContentController.getProductById(_that).then(response => {
-            productsArray.push(response.data);
+    elementProperty.getElement('#listProductsClient',element => {
+        listProducts.map(_that => {
+            let check = listProducts.indexOf(_that);
+            if (check > -1) {
+                listProducts.splice(check, 1);
+                console.log(listProducts)
+            }
+            let data = {};
+            data.id = _that;
+            ContentController.getProductById(_that).then(response => {
+                let list = '';
+                list += response.data.map(res => {
+                    return `
+                        <tr>
+                            <td>${res.name}</td>
+                            <td>R$${res.value}</td>
+                            <td>1</td>
+                        </tr>
+                    `;
+                }).join(' ');
+                element.innerHTML += list;
+            })
         });
-    });
-
+    })
 }
-
 
 function getProduct(id) {
     data = {};

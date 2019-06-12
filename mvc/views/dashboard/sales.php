@@ -20,10 +20,14 @@
         </div>
         <div class="second">
             <h5>Produtos do cliente</h5>
+            <div class="center">
+                <input placeholder="Nome do cliente">
+                <input placeholder="Contato">
+            </div>
             <table class="bordered">
                 <thead>
                 <tr>
-                    <td>Nome</td>
+                    <td>Produto</td>
                     <td>Valor</td>
                     <td>Quantidade</td>
                 </tr>
@@ -34,4 +38,10 @@
             </table>
         </div>
     </div>
+</div>
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">send</i>
+    </a>
 </div>
