@@ -1,4 +1,4 @@
-<div class="row">
+<div class="no-print row">
     <div class="col l2 mainNav">
         <div class="profile">
             <label>Nome: </label><span id="nameProfile"></span>

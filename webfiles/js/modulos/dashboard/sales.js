@@ -61,7 +61,7 @@ function reloadListProductsClient() {
                         </tr>
                     `;
                 }).join(' ');
-                
+
                 element.innerHTML += list;
 
                 elementProperty.addEventInElement('.remove-item','onclick',function(){
@@ -126,9 +126,26 @@ function finishRequest(){
     }
     sumTotal();
     preload(false)
-
+    preparePrint();
     setTimeout(()=>{
-        alert(valueTotal)
-    },500)
+        window.print();
+    },2000)
+}
+
+function preparePrint() {
+    elementProperty.getElement('.print', call => {
+        call.style.display = 'block';
+    });
+    elementProperty.getElement('.no-print', call => {
+        call.style.display = 'none';
+    })
+    setTimeout(()=>{
+        elementProperty.getElement('.print', call => {
+            call.style.display = 'none';
+        });
+        elementProperty.getElement('.no-print', call => {
+            call.style.display = 'block';
+        })
+    },3000)
 }
 

@@ -26,3 +26,16 @@
 .ml .generalSales .second input{
     margin: 0.2vw;
 }
+.print{
+    display: none;
+}
+
+@media print {
+    table, th, td
+    {
+        border-collapse:collapse;
+        border: 1px solid black;
+        width:100%;
+        text-align:left;
+    }
+}
