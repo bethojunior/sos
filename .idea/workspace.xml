@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32e4fe44-c9a1-4029-bde9-eee1b08bf05b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/views/dashboard/sales.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/views/dashboard/sales.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webfiles/css/dashboard/sales.css" beforeDir="false" afterPath="$PROJECT_DIR$/webfiles/css/dashboard/sales.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webfiles/css/vendor/materialize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/webfiles/css/vendor/materialize.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js" beforeDir="false" afterPath="$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+            <state relative-caret-position="258">
+              <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -184,12 +180,12 @@
       <workItem from="1559065751689" duration="11899000" />
       <workItem from="1560353780288" duration="3656000" />
       <workItem from="1560358544937" duration="84000" />
-      <workItem from="1560382053728" duration="3418000" />
+      <workItem from="1560382053728" duration="7651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31619000" />
+    <option name="totallyTimeSpent" value="35852000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -455,8 +451,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+        <state relative-caret-position="258">
+          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -45,7 +45,6 @@ function reloadListProductsClient() {
     elementProperty.getElement('#listProductsClient',element => {
         listProducts.map(_that => {
             let check = listProducts.indexOf(_that);
-            console.log(check)
             if (check > -1) {
                 listProducts.splice(check, 1);
             }
@@ -58,11 +57,23 @@ function reloadListProductsClient() {
                         <tr class="item-product" data="${res.id}">
                             <td>${res.name}</td>
                             <td>R$${res.value}</td>
-                            <td><span class="new badge">1</span></td>
+                            <td class="remove-item" id="${res.id}" title="Apagar"><i class="material-icons">clear_all</i></td>
                         </tr>
                     `;
                 }).join(' ');
+                
                 element.innerHTML += list;
+
+                elementProperty.addEventInElement('.remove-item','onclick',function(){
+                    let id = this.getAttribute('id');
+                    elementProperty.getElement('.item-product', item => {
+                        verify = item.getAttribute('data');
+                        if(verify.includes(id)){
+                            item.parentNode.removeChild(item);
+                        }
+                    });
+                });
+
             })
         });
     })
@@ -79,26 +90,45 @@ function getProduct(id) {
 }
 
 elementProperty.addEventInElement('#finish-request','onclick',() => {
-    let data = {};
-    data.name = document.getElementById('name-client').value;
-    data.contact = document.getElementById('contact-client').value;
+    SwalCustom.dialogConfirm('Deseja finalizar pedido?','',callback => {
+        if(callback) {
+            let data = {};
+            data.name = document.getElementById('name-client').value;
+            data.contact = document.getElementById('contact-client').value;
+            // if (data.name === '' || data.contact === '') {
+            //     swal('Atenção', 'Você precisa informar o nome e contato do cliente', 'info');
+            //     return false;
+            // }
+            preload(true);
+            async function readProductsByClient() {
+                await elementProperty.getElement('.item-product', that => {
+                    products.push(that.getAttribute('data'));
+                });
+                finishRequest()
+            }
+            readProductsByClient();
+            return true;
+        }
+    })
 
-    if(data.name === '' || data.contact === ''){
-        swal('Atenção','Você precisa informar o nome e contato do cliente','info');
-    }
-    preload(true);
-    async function readAllProducts() {
-        await elementProperty.getElement('.item-product', that => {
-            products.push(that.getAttribute('data'));
-        });
-        finishRequest()
-    }
-    readAllProducts();
 });
 
 
-function finishRequest() {
-    console.log(products)
-    preload(false);
+function finishRequest(){
+    let valueTotal = 0;
+    async function sumTotal() {
+        await products.map(id => {
+            getProduct(id).then(callback => {
+                let response = callback.data[0];
+                valueTotal += parseInt(response.value);
+            });
+        });
+    }
+    sumTotal();
+    preload(false)
+
+    setTimeout(()=>{
+        alert(valueTotal)
+    },500)
 }
 
