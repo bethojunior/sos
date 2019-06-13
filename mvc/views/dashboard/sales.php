@@ -55,9 +55,9 @@
                 <div class="center">
                     <h1>S.O.S</h1>
                 </div>
-                <span>Cliente : Betho jr</span>
+                <span>Cliente : <b id="name-print"></b></span>
                 <br>
-                <span>Contato: (88)9 94253764</span>
+                <span>Contato: <b id="contact-print"></b></span>
                 <br>
                 <table style="width: 100%" class="bordered striped">
                     <thead style="width: 100%">
@@ -68,28 +68,14 @@
                     </tr>
                     </thead>
 
-                    <tbody style="width: 100%">
-                    <tr>
-                        <td>Alvin</td>
-                        <td>Eclair</td>
-                        <td>$0.87</td>
-                    </tr>
-                    <tr>
-                        <td>Alan</td>
-                        <td>Jellybean</td>
-                        <td>$3.76</td>
-                    </tr>
-                    <tr>
-                        <td>Jonathan</td>
-                        <td>Lollipop</td>
-                        <td>$7.00</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Total</td>
-                        <td>R$98,50</td>
-                    </tr>
+                    <tbody style="width: 100%" id="mount-products-sale">
                     </tbody>
+                    <tr>
+                        <th></th>
+                        <th>Total</th>
+                        <th id="value-total-sale"></th>
+                        <input hidden id="value-total">
+                    </tr>
                 </table>
                 <div style="margin-top: 3vw">
                     <span>Este comprovante não tem valor fiscal e deve ser apresentado caso o produto precise de manutenção</span>

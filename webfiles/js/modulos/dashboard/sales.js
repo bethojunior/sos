@@ -1,6 +1,8 @@
 mountProducts();
 let products = [];
 let listProducts = [];
+let valueTotal = 0;
+let total = 0;
 
 function mountProducts(){
     elementProperty.getElement('#mountListProducts',element => {
@@ -73,7 +75,6 @@ function reloadListProductsClient() {
                         }
                     });
                 });
-
             })
         });
     })
@@ -95,10 +96,10 @@ elementProperty.addEventInElement('#finish-request','onclick',() => {
             let data = {};
             data.name = document.getElementById('name-client').value;
             data.contact = document.getElementById('contact-client').value;
-            // if (data.name === '' || data.contact === '') {
-            //     swal('Atenção', 'Você precisa informar o nome e contato do cliente', 'info');
-            //     return false;
-            // }
+            if (data.name === '' || data.contact === '') {
+                swal('Atenção', 'Você precisa informar o nome e contato do cliente', 'info');
+                return false;
+            }
             preload(true);
             async function readProductsByClient() {
                 await elementProperty.getElement('.item-product', that => {
@@ -115,7 +116,7 @@ elementProperty.addEventInElement('#finish-request','onclick',() => {
 
 
 function finishRequest(){
-    let valueTotal = 0;
+
     async function sumTotal() {
         await products.map(id => {
             getProduct(id).then(callback => {
@@ -129,16 +130,52 @@ function finishRequest(){
     preparePrint();
     setTimeout(()=>{
         window.print();
-    },2000)
+    },1000)
 }
 
 function preparePrint() {
+
+    document.getElementById('name-print').innerHTML = document.getElementById('name-client').value;
+    document.getElementById('contact-print').innerHTML = document.getElementById('contact-client').value;
+
+
+    elementProperty.getElement('#mount-products-sale', element => {
+        products.map(id=>{
+            let data = {};
+            data.id = id;
+            ContentController.getProductById(data).then(response => {
+                let list = '';
+                list += response.data.map(res => {
+                    return `
+                        <tr class="item-product" data="${res.id}">
+                            <td>${res.name}</td>
+                            <td>R$${res.value}</td>
+                            <td>${res.ref}</td>
+                        </tr>
+                    `;
+                }).join(' ');
+                element.innerHTML += list;
+                elementProperty.getElement('#value-total-sale', call => {
+                    call.innerHTML = 'R$ '+ Mask.maskMoney(valueTotal);
+                    total = valueTotal;
+                });
+                elementProperty.getElement('#value-total', call => {
+                    call.value = valueTotal;
+                });
+            })
+        })
+    });
+
+
     elementProperty.getElement('.print', call => {
         call.style.display = 'block';
     });
     elementProperty.getElement('.no-print', call => {
         call.style.display = 'none';
     })
+
+    insertRequest()
+
     setTimeout(()=>{
         elementProperty.getElement('.print', call => {
             call.style.display = 'none';
@@ -146,6 +183,18 @@ function preparePrint() {
         elementProperty.getElement('.no-print', call => {
             call.style.display = 'block';
         })
-    },3000)
+    },4000)
 }
 
+
+function insertRequest() {
+    let valor = document.getElementById('value-total');
+    setTimeout(() => {
+        data.valuesale = valor.value;
+        data.what = products;
+        data.idwho = 1;
+        ContentController.insertSale(data).then(resolve => {
+            console.log(resolve);
+        });
+    },300)
+}

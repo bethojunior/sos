@@ -28,4 +28,11 @@ class ContentController {
         })
     }
 
+    static insertSale(data)
+    {
+        return new Promise(resolve => {
+            ConnectionServer.simpleRequest('cashier/insert','POST',{data},resolve)
+        })
+    }
+
 }

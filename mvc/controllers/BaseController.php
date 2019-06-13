@@ -14,6 +14,7 @@ class BaseController {
     public $byGet;
     public $contentDao;
     public $baseDao;
+    public $cashDao;
 
     const LEVEL_CRITICAL    = 1;
     const LEVEL_MEDIUM      = 2;
@@ -33,6 +34,7 @@ class BaseController {
         $this->byGet  = $_GET;
         $this->userdao = new UserDao();
         $this->baseDao = new BaseDao();
+        $this->cashDao = new CashierDao();
     }
 
 
