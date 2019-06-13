@@ -12,6 +12,8 @@
 }
 .ml .generalSales .first{
     width: 35%;
+    background-color: whitesmoke;
+    padding: 0.5vw;
 }
 .ml .generalSales .first #mountListProducts{
     /*border: solid 1px;*/

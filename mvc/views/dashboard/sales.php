@@ -3,7 +3,7 @@
     <div class="divider first"></div>
     <div class="generalSales">
         <div class="first">
-            <input placeholder="Buscar">
+            <input id="search-products" placeholder="Buscar">
             <table class="bordered">
                 <thead>
                     <tr>
@@ -21,8 +21,8 @@
         <div class="second">
             <h5>Produtos do cliente</h5>
             <div class="center">
-                <input placeholder="Nome do cliente">
-                <input placeholder="Contato">
+                <input id="name-client" placeholder="Nome do cliente">
+                <input id="contact-client" placeholder="Contato">
             </div>
             <table class="bordered">
                 <thead>
@@ -40,7 +40,7 @@
     </div>
 </div>
 
-<div class="fixed-action-btn">
+<div id="finish-request" class="fixed-action-btn">
     <a class="btn-floating btn-large red">
         <i class="large material-icons">send</i>
     </a>
