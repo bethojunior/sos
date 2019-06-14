@@ -3,15 +3,15 @@
 
 class CashierDao extends BaseDao
 {
-    public function insert($id_who , $what , $value_sale , $data , $name){
+    public function insert($id_who , $what , $value_sale , $name){
 
         try{
-            $query = "INSERT INTO caixa (what , id_who , value_sale , data_who , name) VALUES (:what , :id_who , :value_sale , :data_who , :name)";
+            $query = "INSERT INTO caixa (what , id_who , value_sale , name) VALUES (:what , :id_who , :value_sale , :name)";
             $query = $this->conn->prepare($query);
             $query -> bindValue(':what'        , $what  ,   PDO::PARAM_STR);
             $query -> bindValue(':id_who'      ,$id_who ,   PDO::PARAM_STR);
             $query -> bindValue(':value_sale'  ,$value_sale,PDO::PARAM_STR);
-            $query -> bindValue(':data_who'    ,$data,      PDO::PARAM_STR);
+//            $query -> bindValue(':data_who'    ,$data,      PDO::PARAM_STR);
             $query -> bindValue(':name'        ,$name,      PDO::PARAM_STR);
             $query->execute();
 
@@ -31,7 +31,7 @@ class CashierDao extends BaseDao
     public function deleteContent($id){
 
         try{
-            $query = "delete from products where id = :id";
+            $query = "delete caixa products where id = :id";
             $query = $this->conn->prepare($query);
             $query -> bindValue(':id' , $id , PDO::PARAM_INT);
             $query->execute();
@@ -50,7 +50,7 @@ class CashierDao extends BaseDao
 
     public function getById($id){
         try{
-            $query = "SELECT * FROM products where id = :id";
+            $query = "SELECT * FROM caixa where id = :id";
             $query = $this->conn->prepare($query);
             $query->bindValue(':id' , $id , PDO::PARAM_INT);
             $query->execute();
@@ -69,5 +69,30 @@ class CashierDao extends BaseDao
             return;
         }
     }
+
+
+    public function getMonthValue($id){
+        try{
+            $query = "SELECT SUM(value_sale) AS total FROM caixa WHERE DATE_FORMAT(data_who, '%Y-%m') = '2014-05'";
+            $query = $this->conn->prepare($query);
+            $query->execute();
+            $all = $query->fetchAll(PDO::FETCH_OBJ);
+
+            if($query->rowCount() != 0){
+
+                ApiResponse::showResponse(true , 'find' , $all);
+                return;
+            }
+            ApiResponse::showResponse(false , 'Erro' , $all);
+            return;
+
+        }catch(PDOException $e){
+            ApiResponse::showResponse(false , $e->getMessage() , $all);
+            return;
+        }
+    }
+
+
+
 
 }

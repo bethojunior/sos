@@ -4,7 +4,6 @@ error_reporting(E_ALL);
 ini_set('display_errors', 0);
 ini_set('session.gc_probality', 0);
 setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-date_default_timezone_set('America/Fortaleza');
 
 session_start();
 startIncludes('../services');

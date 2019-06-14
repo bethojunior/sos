@@ -10,8 +10,7 @@ class CashierController extends BaseController
         $idwho = $this->byPost['idwho'];
         $what  = implode(',', $this->byPost['what']) ;
         $valuesale = $this->byPost['valuesale'];
-        $data = date("d/m/y");
-        echo $this->cashDao->insert($idwho , $what , $valuesale ,$data , $name);
+        echo $this->cashDao->insert($idwho , $what , $valuesale , $name);
     }
 
 
