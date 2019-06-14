@@ -1,6 +1,6 @@
 <div class="ml">
-    <span class="titlePage"><b>Caixa</b>     Total mensal : <span id="month"></span></span>
-    <i id="addUser" class="material-icons right">person_add</i>
+    <span class="titlePage"><b>Caixa</b></span>
+    <b style="padding-right: 2vw" class="right">Total mensal : <span id="month"></span></b>
     <div class="divider first"></div>
     <table class="striped highlight">
         <thead>
