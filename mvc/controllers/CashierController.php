@@ -31,4 +31,9 @@ class CashierController extends BaseController
         echo $this->baseDao->dbGetAll('caixa');
     }
 
+    public function actionGetValueMonth(){
+        $now = date('Y/m');
+        return $this->cashDao->getMonthValue($now);
+    }
+
 }

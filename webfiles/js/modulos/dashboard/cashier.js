@@ -1,6 +1,7 @@
 $('.modal').modal();
 initUsers();
 
+getValueMonth();
 
 function initUsers() {
     elementProperty.getElement('#mountCashier', write => {
@@ -22,4 +23,13 @@ function initUsers() {
             write.innerHTML = list;
         });
     });
+}
+
+function getValueMonth() {
+    ContentController.getValueMonth().then(callback => {
+        response = callback.data[0];
+        elementProperty.getElement('#month', here => {
+            here.innerHTML = 'R$ '+response.total;
+        })
+    })
 }

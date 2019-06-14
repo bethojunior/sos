@@ -42,4 +42,11 @@ class ContentController {
         })
     }
 
+    static getValueMonth()
+    {
+        return new Promise(resolve => {
+            ConnectionServer.simpleRequest('cashier/GetValueMonth','POST',{},resolve)
+        })
+    }
+
 }

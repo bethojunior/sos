@@ -71,9 +71,9 @@ class CashierDao extends BaseDao
     }
 
 
-    public function getMonthValue($id){
+    public function getMonthValue($who){
         try{
-            $query = "SELECT SUM(value_sale) AS total FROM caixa WHERE DATE_FORMAT(data_who, '%Y-%m') = '2014-05'";
+            $query = "SELECT SUM(value_sale) AS total FROM caixa WHERE DATE_FORMAT(data_who, '%Y/%m') = '$who'";
             $query = $this->conn->prepare($query);
             $query->execute();
             $all = $query->fetchAll(PDO::FETCH_OBJ);
