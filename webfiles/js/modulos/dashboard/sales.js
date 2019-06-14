@@ -193,6 +193,7 @@ function insertRequest() {
         data.valuesale = valor.value;
         data.what = products;
         data.idwho = 1;
+        data.name = document.getElementById('name-client').value
         ContentController.insertSale(data).then(resolve => {
             console.log(resolve);
         });

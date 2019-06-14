@@ -3,14 +3,16 @@
 
 class CashierDao extends BaseDao
 {
-    public function insert($id_who , $what , $value_sale){
+    public function insert($id_who , $what , $value_sale , $data , $name){
 
         try{
-            $query = "INSERT INTO caixa (what , id_who , value_sale) VALUES (:what , :id_who , :value_sale)";
+            $query = "INSERT INTO caixa (what , id_who , value_sale , data_who , name) VALUES (:what , :id_who , :value_sale , :data_who , :name)";
             $query = $this->conn->prepare($query);
-            $query -> bindValue(':what'        , $what  , PDO::PARAM_STR);
-            $query -> bindValue(':id_who'      ,$id_who , PDO::PARAM_STR);
-            $query -> bindValue(':value_sale',$value_sale,PDO::PARAM_STR);
+            $query -> bindValue(':what'        , $what  ,   PDO::PARAM_STR);
+            $query -> bindValue(':id_who'      ,$id_who ,   PDO::PARAM_STR);
+            $query -> bindValue(':value_sale'  ,$value_sale,PDO::PARAM_STR);
+            $query -> bindValue(':data_who'    ,$data,      PDO::PARAM_STR);
+            $query -> bindValue(':name'        ,$name,      PDO::PARAM_STR);
             $query->execute();
 
             if($query){

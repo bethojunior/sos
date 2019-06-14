@@ -11,7 +11,7 @@
             <li><i class="material-icons">home</i><a href="<?=Host::getLocal()?>dashboard/init">Inicio</a></li>
             <li><i class="material-icons">local_grocery_store</i><a href="<?=Host::getLocal()?>dashboard/sale">Vender</a></li>
             <li><i class="material-icons">move_to_inbox</i><a href="<?=Host::getLocal()?>dashboard/products">Produtos</a></li>
-            <li><i class="material-icons">person</i><a href="<?=Host::getLocal()?>dashboard/users">Usuários</a></li>
+            <li><i class="material-icons">filter_list</i><a href="<?=Host::getLocal()?>dashboard/cashier">Caixa</a></li>
             <li id="logout"><i class="material-icons"></i>Sair</li>
         </ul>
     </div>

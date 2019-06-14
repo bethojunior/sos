@@ -35,4 +35,11 @@ class ContentController {
         })
     }
 
+    static getCashier()
+    {
+        return new Promise(resolve => {
+            ConnectionServer.simpleRequest('cashier/GetAll','POST',{},resolve)
+        })
+    }
+
 }

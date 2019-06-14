@@ -6,10 +6,12 @@ class CashierController extends BaseController
 
     public function actionInsert()
     {
+        $name = $this->byPost['name'];
         $idwho = $this->byPost['idwho'];
         $what  = implode(',', $this->byPost['what']) ;
         $valuesale = $this->byPost['valuesale'];
-        echo $this->cashDao->insert($idwho,$what,$valuesale);
+        $data = date("d/m/y");
+        echo $this->cashDao->insert($idwho , $what , $valuesale ,$data , $name);
     }
 
 

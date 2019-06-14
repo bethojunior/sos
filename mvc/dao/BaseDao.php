@@ -14,7 +14,7 @@ class BaseDao{
 
     public function dbGetAll($table){
         try{
-            $query = "SELECT * FROM {$table}";
+            $query = "SELECT * FROM {$table} ORDER BY id DESC";
             $query = $this->conn->prepare($query);
             $query->execute();
             $all = $query->fetchAll(PDO::FETCH_OBJ);

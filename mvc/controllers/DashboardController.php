@@ -47,10 +47,10 @@ class DashboardController extends View
         $this->layoutBuilder($views, $js, $css, $seo);
     }
 
-    function actionUsers(){
-        $js  = ['controllers/UserController','modulos/nav/init','modulos/dashboard/users'];
-        $css = ['home/init','preload','dashboard/users','nav/main'];
-        $views = ['preload/index','nav/main','dashboard/users'];
+    function actionCashier(){
+        $js  = ['controllers/ContentController','modulos/nav/init','modulos/dashboard/cashier'];
+        $css = ['home/init','preload','dashboard/cashier','nav/main'];
+        $views = ['preload/index','nav/main','dashboard/cashier'];
 
         $seo = new stdClass();
         $seo->description   = '';
