@@ -6,6 +6,7 @@
         <thead>
             <tr>
                 <th>Nome</th>
+                <th>Vendedor</th>
                 <th>Produtos</th>
                 <th>Data</th>
                 <th>Valor</th>

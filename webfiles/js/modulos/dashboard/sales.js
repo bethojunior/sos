@@ -130,7 +130,8 @@ function finishRequest(){
     preparePrint();
     setTimeout(()=>{
         window.print();
-    },1000)
+        window.location.href = HOST+'dashboard/sale';
+    },1300)
 }
 
 function preparePrint() {
@@ -192,7 +193,7 @@ function insertRequest() {
     setTimeout(() => {
         data.valuesale = valor.value;
         data.what = products;
-        data.idwho = 1;
+        data.idwho = dataUser.name;
         data.name = document.getElementById('name-client').value
         ContentController.insertSale(data).then(resolve => {
             console.log(resolve);

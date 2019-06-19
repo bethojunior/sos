@@ -48,7 +48,7 @@ class DashboardController extends View
     }
 
     function actionCashier(){
-        $js  = ['controllers/ContentController','modulos/nav/init','modulos/dashboard/cashier'];
+        $js  = ['controllers/UserController','controllers/ContentController','modulos/nav/init','modulos/dashboard/cashier'];
         $css = ['home/init','preload','dashboard/cashier','nav/main'];
         $views = ['preload/index','nav/main','dashboard/cashier'];
 

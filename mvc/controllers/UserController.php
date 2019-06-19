@@ -30,6 +30,13 @@ class UserController extends BaseController
 
     }
 
+    public function actionGetUserById()
+    {
+        $id = $this->byPost['id'];
+        echo $this->userdao->getUserById($id);
+    }
+
+
     public function actionInsertUser(){
 
         $token =  base64_encode(rand (1 , 150));

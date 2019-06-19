@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32e4fe44-c9a1-4029-bde9-eee1b08bf05b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/views/dashboard/cashier.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/views/dashboard/cashier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfiles/js/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/webfiles/js/controllers/UserController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webfiles/js/modulos/dashboard/cashier.js" beforeDir="false" afterPath="$PROJECT_DIR$/webfiles/js/modulos/dashboard/cashier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js" beforeDir="false" afterPath="$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,23 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="188" selection-start-line="188" selection-end-line="188" />
-              <folding>
-                <marker date="1560531590666" expanded="true" signature="4394:4450" ph="..." />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mvc/views/dashboard/cashier.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="180">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -43,8 +43,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webfiles/js/modulos/dashboard/cashier.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+            <state relative-caret-position="266">
+              <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webfiles/js/controllers/UserController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/controllers/DashboardController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/dao/UserDao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -52,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webfiles/js/controllers/ContentController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="555">
+              <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -61,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mvc/dao/CashierDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="27" />
+            <state relative-caret-position="1200">
+              <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -80,6 +116,7 @@
     <findStrings>
       <find>products</find>
       <find>mask</find>
+      <find>getUserById</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,16 +152,18 @@
         <option value="$PROJECT_DIR$/mvc/controllers/BaseController.php" />
         <option value="$PROJECT_DIR$/mvc/views/dashboard/sales.php" />
         <option value="$PROJECT_DIR$/mvc/views/nav/main.php" />
-        <option value="$PROJECT_DIR$/mvc/controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/mvc/dao/BaseDao.php" />
         <option value="$PROJECT_DIR$/webfiles/js/service/Mask.js" />
-        <option value="$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js" />
         <option value="$PROJECT_DIR$/index/default.php" />
         <option value="$PROJECT_DIR$/webfiles/js/controllers/ContentController.js" />
         <option value="$PROJECT_DIR$/mvc/dao/CashierDao.php" />
         <option value="$PROJECT_DIR$/mvc/controllers/CashierController.php" />
-        <option value="$PROJECT_DIR$/webfiles/js/modulos/dashboard/cashier.js" />
+        <option value="$PROJECT_DIR$/mvc/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/mvc/views/dashboard/cashier.php" />
+        <option value="$PROJECT_DIR$/mvc/controllers/DashboardController.php" />
+        <option value="$PROJECT_DIR$/webfiles/js/controllers/UserController.js" />
+        <option value="$PROJECT_DIR$/webfiles/js/modulos/dashboard/cashier.js" />
+        <option value="$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js" />
       </list>
     </option>
   </component>
@@ -165,7 +204,23 @@
               <item name="sos" type="462c0819:PsiDirectoryNode" />
               <item name="webfiles" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="modulos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sos" type="462c0819:PsiDirectoryNode" />
+              <item name="webfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="modulos" type="462c0819:PsiDirectoryNode" />
+              <item name="authenticate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sos" type="462c0819:PsiDirectoryNode" />
+              <item name="webfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="modulos" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,14 +277,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49692000" />
+    <option name="totallyTimeSpent" value="50373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.26494345" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26494345" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32941177" />
@@ -290,13 +345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -461,8 +509,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mvc/dao/UserDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="7" selection-start-line="7" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -470,13 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controllers/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -504,20 +545,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="188" selection-start-line="188" selection-end-line="188" />
-          <folding>
-            <marker date="1560531590666" expanded="true" signature="4394:4450" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/dao/CashierDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="27" />
+        <state relative-caret-position="1200">
+          <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -531,24 +562,52 @@
     <entry file="file://$PROJECT_DIR$/webfiles/js/controllers/SalesController.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/views/dashboard/cashier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webfiles/js/controllers/ContentController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="555">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webfiles/js/controllers/UserController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webfiles/js/modulos/dashboard/cashier.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+        <state relative-caret-position="266">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/views/dashboard/cashier.php">
+    <entry file="file://$PROJECT_DIR$/webfiles/js/modulos/dashboard/sales.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="315">
+          <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
         </state>
       </provider>
     </entry>

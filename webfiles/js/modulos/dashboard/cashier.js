@@ -1,3 +1,5 @@
+
+
 $('.modal').modal();
 initUsers();
 
@@ -8,9 +10,10 @@ function initUsers() {
         ContentController.getCashier().then(response => {
             let list = '';
             list += response.data.map(res => {
-                    return `
+                return `
                     <tr class="thisUser" id="${res.id}">
                         <td>${res.name}</td>
+                        <td>${res.id_who}</td>
                         <td class="open-products" id="${res.what}">${res.what}</td>
                         <td>${res.data_who}</td>
                         <td>R$ ${res.value_sale}</td>
@@ -25,6 +28,7 @@ function initUsers() {
         });
     });
 }
+
 
 function getValueMonth() {
     ContentController.getValueMonth().then(callback => {
@@ -42,7 +46,7 @@ function openModalProducts(products){
         let data = {};
         data.id = id;
         ContentController.getProductById(data).then(callback => {
-           that_.push(callback.data[0])
+            that_.push(callback.data[0])
         });
     });
 
@@ -66,3 +70,4 @@ function mountProductsSales(products) {
         table.innerHTML = list;
     });
 }
+
