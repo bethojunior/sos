@@ -8,10 +8,10 @@
             <div class="divider"></div>
         </div>
         <ul>
-            <li><i class="material-icons">home</i><a href="<?=Host::getLocal()?>dashboard/init">Inicio</a></li>
-            <li><i class="material-icons">local_grocery_store</i><a href="<?=Host::getLocal()?>dashboard/sale">Vender</a></li>
-            <li><i class="material-icons">move_to_inbox</i><a href="<?=Host::getLocal()?>dashboard/products">Produtos</a></li>
-            <li><i class="material-icons">filter_list</i><a href="<?=Host::getLocal()?>dashboard/cashier">Caixa</a></li>
+            <li><i class="material-icons">home</i><a href="init">Inicio</a></li>
+            <li><i class="material-icons">local_grocery_store</i><a href="sale">Vender</a></li>
+            <li><i class="material-icons">move_to_inbox</i><a href="products">Produtos</a></li>
+            <li><i class="material-icons">filter_list</i><a href="cashier">Caixa</a></li>
             <li id="logout"><i class="material-icons"></i>Sair</li>
         </ul>
     </div>

@@ -1,56 +1,30 @@
-class UserController{
-    /**
-     *
-     * @param email
-     * @returns {Promise<any>}
-     */
+class UserController {
 
-    static authenticate(data){
+    static auth(data)
+    {
         return new Promise(resolve => {
-            ConnectionServer.simpleRequest('User/Authenticate','POST', {data} , resolve)
+            ConnectionServer.sendRequest('manager/login','POST', data, resolve)
         })
     }
 
-    static getAll(){
+    static getUsersIndicate()
+    {
         return new Promise(resolve => {
-            ConnectionServer.simpleRequest('User/getall','POST', {} , resolve)
+            ConnectionServer.sendRequest('Manager/GetIndicated','GET', '', resolve)
         })
     }
 
-    static getUserByType(data){
+    static getUserByEmail(email)
+    {
         return new Promise(resolve => {
-            ConnectionServer.simpleRequest('User/GetUserByType','POST', {data}, resolve)
+            ConnectionServer.sendRequest('ManagerPartner/findByEmail?email='+email,'GET','',resolve)
         })
     }
 
-    static changeStatusUSer(data){
+    static StorePartner(data)
+    {
         return new Promise(resolve => {
-            ConnectionServer.simpleRequest('User/ChangeStatusStudent','POST',{data}, resolve)
-        })
-    }
-
-    static deleteUser(data){
-        return new Promise(resolve => {
-            ConnectionServer.simpleRequest('User/DeleteUser','POST',{data}, resolve)
-        })
-    }
-
-
-    static updateUser(data){
-        return new Promise(resolve => {
-            ConnectionServer.simpleRequest('User/UpdateUser','POST',{data}, resolve)
-        })
-    }
-
-    static insertUSer(data){
-        return new Promise(resolve => {
-            ConnectionServer.simpleRequest('User/InsertUser','POST',{data}, resolve)
-        })
-    }
-
-    static getUserById(data){
-        return new Promise(resolve => {
-            ConnectionServer.simpleRequest('User/GetUserById','POST',{data}, resolve)
+            ConnectionServer.sendRequest('ManagerPartner/StorePartner','POST',data,resolve);
         })
     }
 

@@ -9,8 +9,7 @@ function env($key) {
 function getEnvironment(){
     $environments = [
         'localhost' => "../config/host.local.json",
-        'beta.taxireturn.com.br' => "../config/host.test.json",
-        'taxireturn.com.br' => "../config/host.production.json",
+        'sos.fabrica704.com.br' => "../config/host.production.json",
     ];
 
     return $environments[$_SERVER['HTTP_HOST']];

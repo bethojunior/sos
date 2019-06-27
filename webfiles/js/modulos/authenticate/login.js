@@ -1,8 +1,8 @@
-const elementPorperty = new ElementProperty();
+let element= new ElementProperty();
 
-elementPorperty.addEventInElement('#showPassword','onclick',function(){
+element.addEventInElement('#showPassword','onclick',function(){
     _that = this;
-    elementPorperty.getElement('#userPassword' , show => {
+    element.getElement('#userPassword' , show => {
         if(show.getAttribute('type') === 'password'){
             show.setAttribute('type' , 'text');
             this.innerHTML = "visibility_off";
@@ -13,7 +13,7 @@ elementPorperty.addEventInElement('#showPassword','onclick',function(){
     });
 });
 
-elementPorperty.addEventInElement('#logar','onclick',function(){
+element.addEventInElement('#logar','onclick',function(){
     let user = {};
     user.email = document.getElementById('userName').value;
     user.password = document.getElementById('userPassword').value;

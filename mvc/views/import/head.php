@@ -5,19 +5,18 @@
     <meta name="theme-color" content="#40aabc"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--    <link rel="icon" href="--><?//= Host::getLocal(); ?><!--/webfiles/img/logo.png">-->
-    <link href="<?=Host::getLocal()?>/webfiles/css/vendor/materialize.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="<?= Host::getLocal(); ?>webfiles/css/dosis.css">
-    <link rel="stylesheet" href="<?= Host::getLocal(); ?>webfiles/css/assets.css">
-    <link rel="stylesheet" href="<?= Host::getLocal(); ?>webfiles/css/preload.css">
-    <link rel="stylesheet" href="<?= Host::getLocal(); ?>webfiles/css/menu.css">
+    <link href="/webfiles/css/vendor/materialize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/webfiles/css/dosis.css">
+    <link rel="stylesheet" href="/webfiles/css/assets.css">
+    <link rel="stylesheet" href="/webfiles/css/preload.css">
+    <link rel="stylesheet" href="/webfiles/css/menu.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- import dynamic css in each page  -->
     <?php
     if (isset($this->filesCss)) : ?>
         <?php foreach ($this->filesCss as $css) : ?>
-            <link rel="stylesheet" href="<?php echo Host::getLocal(); ?>webfiles/css/<?php echo $css ?>.css">
+            <link rel="stylesheet" href="/webfiles/css/<?php echo $css ?>.css">
         <?php endforeach; ?>
     <?php endif; ?>
 

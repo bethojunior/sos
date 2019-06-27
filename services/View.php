@@ -27,7 +27,7 @@ class View extends Controller
    {
        $this->filesJs = $filesJs;
        $this->filesCss = $filesCss;
-       $this->titlePage = ($seoObj->title != null) ? $seoObj->title : "Web cursinho";
+       $this->titlePage = ($seoObj->title != null) ? $seoObj->title : "Sos";
 
        if(!is_null($seoObj)) {
         $this->seo = new Seo($seoObj);

@@ -121,7 +121,7 @@ function finishRequest(){
         await products.map(id => {
             getProduct(id).then(callback => {
                 let response = callback.data[0];
-                valueTotal += parseInt(response.value);
+                valueTotal += parseFloat(response.value);
             });
         });
     }
@@ -131,7 +131,7 @@ function finishRequest(){
     setTimeout(()=>{
         window.print();
         window.location.href = HOST+'dashboard/sale';
-    },1300)
+    },2500)
 }
 
 function preparePrint() {
